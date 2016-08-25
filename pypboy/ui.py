@@ -20,24 +20,24 @@ class Header(game.Entity):
 		new_date = datetime.datetime.now().strftime("%d.%m.%y.%H:%M:%S")
 		if new_date != self._date:
 			self.image.fill((0, 0, 0))
-			pygame.draw.line(self.image, (95, 255, 177), (5, 15), (5, 35), 2)
-			# pygame.draw.line(self.image, (95, 255, 177), (5, 15), (5, 35), 2)
-			pygame.draw.line(self.image, (95, 255, 177), (5, 15), (config.WIDTH - 154, 15), 2)
-			# pygame.draw.line(self.image, (95, 255, 177), (5, 15), (config.WIDTH - 154, 15), 2)
-			pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 154, 15), (config.WIDTH - 154, 35), 2)
-			# pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 154, 15), (config.WIDTH - 154, 35), 2)
-			pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 148, 15), (config.WIDTH - 13, 15), 2)
-			# pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 148, 15), (config.WIDTH - 13, 15), 2)
-			pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 13, 15), (config.WIDTH - 13, 35), 2)
-			# pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 13, 15), (config.WIDTH - 13, 35), 2)
+			pygame.draw.line(self.image, (47, 128, 89), (5, 15), (5, 35), 2)
+			# pygame.draw.line(self.image, (47, 128, 89), (5, 15), (5, 35), 2)
+			pygame.draw.line(self.image, (47, 128, 89), (5, 15), (config.WIDTH - 154, 15), 2)
+			# pygame.draw.line(self.image, (47, 128, 89), (5, 15), (config.WIDTH - 154, 15), 2)
+			pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 154, 15), (config.WIDTH - 154, 35), 2)
+			# pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 154, 15), (config.WIDTH - 154, 35), 2)
+			pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 148, 15), (config.WIDTH - 13, 15), 2)
+			# pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 148, 15), (config.WIDTH - 13, 15), 2)
+			pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 13, 15), (config.WIDTH - 13, 35), 2)
+			# pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 13, 15), (config.WIDTH - 13, 35), 2)
 
 			text = config.FONTS[14].render("  %s  " % self.headline, True, (105, 251, 187), (0, 0, 0))
 			self.image.blit(text, (26, 8))
-			text = config.FONTS[14].render(self.title, True, (95, 255, 177), (0, 0, 0))
-			# text = config.FONTS[14].render(self.title, True, (95, 255, 177), (0, 0, 0))
+			text = config.FONTS[14].render(self.title, True, (47, 128, 89), (0, 0, 0))
+			# text = config.FONTS[14].render(self.title, True, (47, 128, 89), (0, 0, 0))
 			self.image.blit(text, ((config.WIDTH - 154) - text.get_width() - 10, 19))
-			text = config.FONTS[14].render(self._date, True, (95, 255, 177), (0, 0, 0))
-			# text = config.FONTS[14].render(self._date, True, (95, 255, 177), (0, 0, 0))
+			text = config.FONTS[14].render(self._date, True, (47, 128, 89), (0, 0, 0))
+			# text = config.FONTS[14].render(self._date, True, (47, 128, 89), (0, 0, 0))
 			self.image.blit(text, ((config.WIDTH - 141), 19))
 			self._date = new_date
 
@@ -59,12 +59,12 @@ class Footer(game.Entity):
 		#self.dirty = 1
 		self.selected = module
 		self.image.fill((0, 0, 0))
-		pygame.draw.line(self.image, (95, 255, 177), (5, 2), (5, 20), 2)
-		# pygame.draw.line(self.image, (95, 255, 177), (5, 2), (5, 20), 2)
-		pygame.draw.line(self.image, (95, 255, 177), (5, 20), (config.WIDTH - 13, 20), 2)
-		# pygame.draw.line(self.image, (95, 255, 177), (5, 20), (config.WIDTH - 13, 20), 2)
-		pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 13, 2), (config.WIDTH - 13, 20), 2)
-		# pygame.draw.line(self.image, (95, 255, 177), (config.WIDTH - 13, 2), (config.WIDTH - 13, 20), 2)
+		pygame.draw.line(self.image, (47, 128, 89), (5, 2), (5, 20), 2)
+		# pygame.draw.line(self.image, (47, 128, 89), (5, 2), (5, 20), 2)
+		pygame.draw.line(self.image, (47, 128, 89), (5, 20), (config.WIDTH - 13, 20), 2)
+		# pygame.draw.line(self.image, (47, 128, 89), (5, 20), (config.WIDTH - 13, 20), 2)
+		pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 13, 2), (config.WIDTH - 13, 20), 2)
+		# pygame.draw.line(self.image, (47, 128, 89), (config.WIDTH - 13, 2), (config.WIDTH - 13, 20), 2)
 
 		offset = 20
 		for m in self.menu:
@@ -72,14 +72,14 @@ class Footer(game.Entity):
 			text_width = 0
 			while text_width < 54:
 				spaces = " ".join([" " for x in range(padding)])
-				text = config.FONTS[12].render("%s%s%s" % (spaces, m, spaces), True, (105, 255, 187), (0, 0, 0))
+				text = config.FONTS[12].render("%s%s%s" % (spaces, m, spaces), True, (52, 128, 94), (0, 0, 0))
 				# text = config.FONTS[12].render("%s%s%s" % (spaces, m, spaces), True, (105, 255, 187), (0, 0, 0))
 				text_width = text.get_size()[0]
 				padding += 1
 			#print(m+" : "+str(text.get_size()))
 			if m == self.selected:
-				pygame.draw.rect(self.image, (95, 255, 177), (offset - 2, 6, (text_width + 3), 26), 2)
-				# pygame.draw.rect(self.image, (95, 255, 177), (offset - 2, 6, (text_width + 3), 26), 2)
+				pygame.draw.rect(self.image, (47, 128, 89), (offset - 2, 6, (text_width + 3), 26), 2)
+				# pygame.draw.rect(self.image, (47, 128, 89), (offset - 2, 6, (text_width + 3), 26), 2)
 			self.image.blit(text, (offset, 12))
 
 			offset = offset + 120 + (text_width - 100)
@@ -123,7 +123,7 @@ class Menu(game.Entity):
 			text = config.FONTS[14].render(" %s " % self.items[i], True, (0, 103, 56), (0, 0, 0))
 			if i == self.selected:
 				selected_rect = (5, offset - 2, text.get_size()[0] + 6, text.get_size()[1] + 3)
-				pygame.draw.rect(self.image, (95, 255, 177), selected_rect, 2)
+				pygame.draw.rect(self.image, (47, 128, 89), selected_rect, 2)
 			self.image.blit(text, (10, offset))
 			offset += text.get_size()[1] + 6
 
