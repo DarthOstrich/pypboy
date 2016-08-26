@@ -9,6 +9,8 @@ from pypboy.modules.stats import general
 class Module(BaseModule):
 
 	label = "STATS"
+	#possible cause of problem????
+	# GPIO_LED_ID = 30 #GPIO 22 #19 -- original
 	GPIO_LED_ID = 30 #GPIO 22 #19
 
 	def __init__(self, *args, **kwargs):

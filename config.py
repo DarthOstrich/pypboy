@@ -28,16 +28,21 @@ ACTIONS = {
 
 # Using GPIO.BCM as mode
 GPIO_ACTIONS = {
-    4: "module_stats", #GPIO 4
+    # 4: "module_stats", #GPIO 4 - doesnt crash
 	# 14: "module_items", #GPIO 14
-	# 15: "module_data", #GPIO 15
-	17:	"knob_1", #GPIO 17
+	# 15: "module_data", #GPIO 15 - crashed
+	17: "knob_1", #GPIO 17 - doesnt crash
 	# 18: "knob_2", #GPIO 18
 	# 7: "knob_3", #GPIO 7
-	22: "knob_4", #GPIO 22
-	23: "knob_5", #GPIO 27
-	31: "dial_up" #GPIO 23
+	# 22: "knob_4", #GPIO 22 - doesnt crash
+	# 23: "knob_5", #GPIO 27 - crashes when enabled
+	# 31: "dial_up" #GPIO 23
 	# 27: "dial_down" #GPIO 7
+
+	# trying something new
+    # 7: "module_stats", #GPIO 4 - didnt work either
+    # 11: "module_items", #GPIO 17 - didnt work
+
 }
 
 

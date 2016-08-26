@@ -9,6 +9,8 @@ from pypboy.modules.items import ammo
 class Module(BaseModule):
 
 	label = "ITEMS"
+	#possible problem here too
+	# GPIO_LED_ID = 29 #GPIO27 #21 --original
 	GPIO_LED_ID = 29 #GPIO27 #21
 
 	def __init__(self, *args, **kwargs):
