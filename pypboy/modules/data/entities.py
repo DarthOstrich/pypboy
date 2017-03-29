@@ -62,7 +62,7 @@ class Map(game.Entity):
 			self._map_surface.blit(image, (tag[1], tag[2]))
 			text = config.FONTS[12].render(tag[0], True, (95, 255, 177), (0, 0, 0))
 			self._map_surface.blit(text, (tag[1] + 17, tag[2] + 4))
-		
+
 		self.image.blit(self._map_surface, (0, 0), area=self._render_rect)
 
 
@@ -213,18 +213,18 @@ class RadioStation(game.Entity):
 		pygame.mixer.music.load(f)
 		pygame.mixer.music.play()
 		self.state = self.STATES['playing']
-		
+
 	def play(self):
 		if self.state == self.STATES['paused']:
 			pygame.mixer.music.unpause()
 			self.state = self.STATES['playing']
 		else:
 			self.play_random()
-		
+
 	def pause(self):
 		self.state = self.STATES['paused']
 		pygame.mixer.music.pause()
-		
+
 	def stop(self):
 		self.state = self.STATES['stopped']
 		pygame.mixer.music.stop()

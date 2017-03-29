@@ -10,7 +10,7 @@ os.putenv('SDL_MOUSEDEV'   , '/dev/input/touchscreen')
 
 try:
     import RPi.GPIO as GPIO
-    GPIO.setmode(GPIO.BCM)
+    GPIO.setmode(GPIO.BCM) #changed from BCM to BOARD
     config.GPIO_AVAILABLE = True
 except Exception, e:
     print "GPIO UNAVAILABLE (%s)" % e

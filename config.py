@@ -1,13 +1,13 @@
 import pygame
 
 WIDTH = 480
-HEIGHT = 300
+HEIGHT = 320
 
 # OUTPUT_WIDTH = 320
 # OUTPUT_HEIGHT = 240
 
 #MAP_FOCUS = (-5.9347681, 54.5889076)
-MAP_FOCUS = (-102.3016145, 21.8841274)
+MAP_FOCUS = (-118.4104684, 34.0211205)
 
 EVENTS = {
 	'SONG_END': pygame.USEREVENT + 1
@@ -31,7 +31,7 @@ GPIO_ACTIONS = {
     # 4: "module_stats", #GPIO 4 - doesnt crash
 	# 14: "module_items", #GPIO 14
 	# 15: "module_data", #GPIO 15 - crashed
-	17: "knob_1", #GPIO 17 - doesnt crash
+	# 17: "knob_1", #GPIO 17 - doesnt crash
 	# 18: "knob_2", #GPIO 18
 	# 7: "knob_3", #GPIO 7
 	# 22: "knob_4", #GPIO 22 - doesnt crash
@@ -40,9 +40,11 @@ GPIO_ACTIONS = {
 	# 27: "dial_down" #GPIO 7
 
 	# trying something new
-    # 7: "module_stats", #GPIO 4 - didnt work either
-    # 11: "module_items", #GPIO 17 - didnt work
-
+    # 4: "module_stats",
+    # 17: "module_items",
+	# 27: "module_data",
+	# 22: "knob_1",
+	# 24: "knob_2"
 }
 
 

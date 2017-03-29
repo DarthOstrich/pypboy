@@ -16,8 +16,8 @@ class Engine(object):
 		self.groups = []
 		self.root_children = EntityGroup()
 		self.background = pygame.surface.Surface(self.screen.get_size()).convert()
-		# self.background.fill((0, 0, 0)) #original 0,0,0
-		self.background = pygame.image.load('images/overlay.png')
+		self.background.fill((0, 0, 0)) #original 0,0,0
+		self.background = pygame.image.load('images/overlay_org.png')
 
 		self.rescale = False
 		self.last_render_time = 0
